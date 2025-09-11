@@ -15,3 +15,145 @@
   font-weight: <weight>;
   font-style: normal;
 }
+
+
+/* ...existing code... */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #181e29; /* tom escuro igual à imagem */
+}
+
+#container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    min-height: 0;
+}
+
+header {
+    width: 420px; /* ajuste conforme necessário */
+    min-width: 320px;
+    background: #181e29;
+    color: #fff;
+    padding: 64px 48px 32px 64px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #bfc8d6;
+}
+
+header p {
+    color: #7b8598;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+header ul {
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+header ul li {
+    font-size: 18px;
+    color: #bfc8d6;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+header ul li:hover,
+header ul li.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+header ul:last-of-type {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 0;
+}
+
+header ul:last-of-type li {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+main {
+    flex: 1;
+    padding: 64px 64px 32px 64px;
+    background: transparent;
+    color: #bfc8d6;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer {
+    width: 100%;
+    padding: 24px 0 24px 0;
+    background: #181e29;
+    color: #7b8598;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-top: 1px solid #232b3a;
+    margin-top: auto;
+}
+***************************************************************************************************
+
+<!-- ...existing code... -->
+<body>
+    <div id="container">
+        <header>
+            <!-- ...seu conteúdo do header... -->
+        </header>
+        <main>
+            <!-- ...seu conteúdo do main... -->
+        </main>
+    </div>
+    <footer>
+        <p>Livremente projetado em Mockflow e codificado em Visual Studio Code por mim. Desenvolvido com HTML5, CSS e JavaScript. E implementado com Github pages. Todo o texto é composto com a fonte Inter</p>
+    </footer>
+</body>
+<!-- ...existing code... -->
+
+
+Para deixar seu site igual à imagem (header fixo à esquerda, main à direita, footer sempre abaixo do conteúdo), faça os seguintes ajustes:
+
+No seu index.html, envolva o header e o main em uma div com id container:
+
+Resumo:
+
+O header fica fixo à esquerda, ocupa toda a altura.
+O main fica à direita, ocupa o restante.
+O footer sempre fica abaixo do conteúdo, nunca sobreposto.
+Cores e espaçamentos ajustados para ficar próximo ao visual da imagem.
+Se quiser ícones nos links do header, use <i> ou SVGs conforme desejar.
