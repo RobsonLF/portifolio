@@ -3,5 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    
+    --cor1:rgb(45, 48, 51);/*#2d3033*/
+    --cor11:rgba(45, 48, 51, 0.301);
+    --cor2:rgb(64, 80, 94);/*#40505e*/
+    --cor21:rgba(64, 80, 94, 0.301);/*#40505e*/
+    --cor3:rgb(100, 109, 117);/*#646d75*/
+    --cor31:rgba(100, 109, 117, 0.301);/*#646d75*/
+    --cor4:rgb(70, 110, 145);/*#466e91*/
+    --cor41:rgba(70, 110, 145, 0.301);/*#466e91*/
+    --cor5:rgb(20, 141, 247);/*#148df7*/
+    --cor51:rgba(20, 141, 247, 0.301);/*#148df7*/
+
+    --font-padrao:'Inter', 'Roboto', sans-serif;
 }
