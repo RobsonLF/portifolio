@@ -36,7 +36,7 @@ header{
     min-width: 320px;
     background: var(--cor1);
     color: #ffffff;
-    padding: 64px 48px 32px 64px;
+    padding: 48px 48px 32px 48px;
     box-sizing: border-box;
     position: sticky;
     top: 0;
@@ -50,7 +50,7 @@ header{
 }
 header h1{
     font-family: var(--font-padrao);
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 600;
     margin-bottom: 8px;
 }
@@ -72,5 +72,47 @@ header ul{
     font-family: var(--font-padrao);
 }
 header ul li{
-    
+    font-size: 18px;
+    color: #bfc8d6;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    cursor:pointer;
+    transition: color 0.2s;
+}
+header ul li:hover,
+header ul li.active{
+    color:#ffffff;
+    font-weight: bold;
+}
+header ul:last-of-type{
+    display: flex;
+    gap:18px;
+    margin-bottom: 0;
+}
+header ul:last-of-type li{
+    font-size: 22px;
+    margin-bottom: 0;
+}
+main{
+    flex: 1;
+    padding: 64px 64px 32px 64px;
+    background: transparent;
+    color: #bfc8d6;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: var(--font-padrao);
+}
+footer{
+    width: 100%;
+    padding: 24px 0 24px 0;
+    background: var(--cor1);
+    color: #7b8598;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-top: 1px solid var(--cor2);
+    margin-top: auto;
+    font-family: var(--font-padrao);
 }
